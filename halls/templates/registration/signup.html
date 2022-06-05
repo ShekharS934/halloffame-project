@@ -1,0 +1,11 @@
+{% extends 'halls/base.html' %}
+{%block content%}
+<div class="container">
+    <form method="post">
+        {%csrf_token%}
+        {{ form.as_p }}
+        
+        <center><button class="container_p" type="btn btn-black">Sign Up</button></center>
+        </form>
+    </div>
+{%endblock%}
